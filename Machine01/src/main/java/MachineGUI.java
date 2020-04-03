@@ -57,16 +57,16 @@ public class MachineGUI extends JFrame{
     }
 
     private void initializationButtons() {
-        button1.setText("Add Url");
-        button1.setBounds(550, 80, 100, 40);
+        button1.setText("Buscar");
+        button1.setBounds(550, 80, 150, 60);
         panel1.add(button1);
-        ActionListener inputUrl = new ActionListener() {
+        ActionListener URL = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 Watson();
             }
         };
-        button1.addActionListener(inputUrl);
+        button1.addActionListener(URL);
 
     }
 
@@ -88,8 +88,6 @@ public class MachineGUI extends JFrame{
         System.out.println(result.toString());
         textArea1.setText(result.toString());
     }
-
-
 
 
 }
